@@ -1,0 +1,4 @@
+1.3.3v power LED 的那个 cutable trace倒是可以去掉
+2.repair CS PIN  misstake PIN because of featherwing error silkcreen 
+3.Reserve 2 pinholes for jumpers ，GPIO0  is used for IRQ ADC7   is used for RESET 
+4.Remove power module EN, PG connections to MSOM and  featherwing
