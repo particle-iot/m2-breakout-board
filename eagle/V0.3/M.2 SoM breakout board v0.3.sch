@@ -14491,7 +14491,6 @@ CONN_03
 </part>
 <part name="J1" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_03" device="JST-SMD" package3d_urn="urn:adsk.eagle:package:38075/1" value="3-PIN SMD"/>
 <part name="JP4" library="particle SZ" library_urn="urn:adsk.eagle:library:21650216" deviceset="TP_SHORT" device="" package3d_urn="urn:adsk.eagle:package:21650878/5"/>
-<part name="J16" library="particle SZ" library_urn="urn:adsk.eagle:library:21650216" deviceset="SIP-2" device="" package3d_urn="urn:adsk.eagle:package:21650858/5"/>
 <part name="JP9" library="particle SZ" library_urn="urn:adsk.eagle:library:21650216" deviceset="TP_SHORT" device="" package3d_urn="urn:adsk.eagle:package:21650878/5" value="TP_SHORT"/>
 </parts>
 <sheets>
@@ -15158,8 +15157,8 @@ CONN_03
 <attribute name="VALUE" x="161.29" y="147.955" size="1.27" layer="96"/>
 </instance>
 <instance part="J18" gate="G$1" x="118.745" y="106.68" smashed="yes">
-<attribute name="NAME" x="98.425" y="53.34" size="1.778" layer="95"/>
-<attribute name="VALUE" x="98.425" y="50.8" size="1.778" layer="96"/>
+<attribute name="NAME" x="99.695" y="53.34" size="1.778" layer="95"/>
+<attribute name="VALUE" x="98.425" y="50.8" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="J18" gate="G$2" x="53.34" y="102.87" smashed="yes" rot="MR180"/>
 <instance part="J11" gate="G$1" x="220.345" y="36.195" smashed="yes" rot="MR180">
@@ -16656,8 +16655,6 @@ PIN3 LI+</text>
 <text x="238.76" y="69.85" size="1.27" layer="97">25 Power enable pin</text>
 <text x="238.76" y="63.5" size="1.27" layer="97">23 Reserve for reset 
 power module</text>
-<text x="125.73" y="104.775" size="1.27" layer="97">ADC7 can connect to Ethernet Reset pin
-GPIO0 can connect to Ethernet IRQ pin</text>
 </plain>
 <instances>
 <instance part="FRAME2" gate="G$1" x="0" y="0" smashed="yes">
@@ -16937,10 +16934,6 @@ GPIO0 can connect to Ethernet IRQ pin</text>
 <instance part="J1" gate="J$1" x="31.115" y="80.01" smashed="yes" rot="MR180">
 <attribute name="VALUE" x="24.384" y="73.66" size="1.778" layer="96" font="vector" rot="MR90"/>
 <attribute name="NAME" x="36.195" y="73.152" size="1.778" layer="95" font="vector" rot="R180"/>
-</instance>
-<instance part="J16" gate="G$1" x="122.555" y="106.045" smashed="yes">
-<attribute name="NAME" x="121.285" y="111.125" size="1.27" layer="95"/>
-<attribute name="VALUE" x="120.65" y="107.95" size="1.27" layer="96" rot="R270"/>
 </instance>
 </instances>
 <busses>
@@ -17446,11 +17439,6 @@ GPIO0 can connect to Ethernet IRQ pin</text>
 <label x="239.395" y="133.35" size="1.27" layer="95" xref="yes"/>
 <pinref part="J10" gate="G$1" pin="19"/>
 </segment>
-<segment>
-<wire x1="117.475" y1="104.775" x2="107.315" y2="104.775" width="0.1524" layer="91"/>
-<label x="107.315" y="104.775" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="J16" gate="G$1" pin="2"/>
-</segment>
 </net>
 <net name="GPIO1" class="0">
 <segment>
@@ -17655,13 +17643,6 @@ GPIO0 can connect to Ethernet IRQ pin</text>
 <wire x1="126.365" y1="158.75" x2="116.84" y2="158.75" width="0.1524" layer="91"/>
 <label x="116.84" y="158.75" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="J15" gate="G$1" pin="2"/>
-</segment>
-</net>
-<net name="ADC7" class="0">
-<segment>
-<wire x1="117.475" y1="107.315" x2="107.315" y2="107.315" width="0.1524" layer="91"/>
-<label x="107.315" y="107.315" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="J16" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$7" class="0">
