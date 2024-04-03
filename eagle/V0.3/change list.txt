@@ -4,3 +4,7 @@
 4.Remove power module EN, PG connections to MSOM and  featherwing
 change  for test:
  Delete 3.Reserve 2 pinholes for jumpers ，GPIO0  is used for IRQ ADC7   is used for RESET 
+20240404
+1.removed LED2
+2.add EN_AUX,3V3_AUX3
+3.modify out interface 3V3 as 3V3_AUX
