@@ -12,3 +12,4 @@ change  for test:
 5. Modify the TS pin configuration and add reserved plug-in resistor vacancies.
 6.J10 exchanges the positions of PWM1 and PWM2 and aligns with pinmap
 7. modify the layout
+8.change the reset PIN of featherWing

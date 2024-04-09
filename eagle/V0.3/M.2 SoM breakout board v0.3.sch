@@ -22,7 +22,7 @@
 <layer number="12" name="Route12" color="20" fill="1" visible="no" active="no"/>
 <layer number="13" name="Route13" color="21" fill="1" visible="no" active="no"/>
 <layer number="14" name="Route14" color="22" fill="1" visible="no" active="no"/>
-<layer number="15" name="Route15" color="23" fill="1" visible="no" active="no"/>
+<layer number="15" name="Route15" color="30" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
@@ -14345,7 +14345,7 @@ by exp-lbrs.ulp</description>
 <part name="GND111" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="D17" library="particle-studios" library_urn="urn:adsk.eagle:library:10700396" deviceset="DIODE-ZENER" device="" package3d_urn="urn:adsk.eagle:package:18150248/1" value="SMAJ15CA-13-F"/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
-<part name="F5" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="PTCFUSE" device="-1206" package3d_urn="urn:adsk.eagle:package:6240569/1" value="16V/0.75A"/>
+<part name="F5" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="PTCFUSE" device="-1812" package3d_urn="urn:adsk.eagle:package:6240348/1" value="16V/0.75A"/>
 <part name="U$5" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$8" library="microbuilder" deviceset="GND" device=""/>
 <part name="X3" library="con-coax" library_urn="urn:adsk.eagle:library:133" deviceset="BU-SMA-G" device="" package3d_urn="urn:adsk.eagle:package:6205/1"/>
@@ -14548,7 +14548,8 @@ add NMOS control
 and add reserved plug-in resistor vacancies.
 6.J10 exchanges the positions of
  PWM1 and PWM2 and aligns with pinmap
-7. modify the layout</text>
+7. modify the layout
+8.change the reset PIN of featherWing</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes">
@@ -17237,6 +17238,11 @@ the power module EN_AUX which
 <label x="217.805" y="65.405" size="1.27" layer="95"/>
 <pinref part="J6" gate="G$1" pin="!RST@23"/>
 </segment>
+<segment>
+<wire x1="126.365" y1="158.75" x2="116.84" y2="158.75" width="0.1524" layer="91"/>
+<label x="116.84" y="158.75" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="J15" gate="G$1" pin="2"/>
+</segment>
 </net>
 <net name="N$45" class="0">
 <segment>
@@ -17547,13 +17553,6 @@ the power module EN_AUX which
 <wire x1="163.83" y1="166.37" x2="141.605" y2="166.37" width="0.1524" layer="91"/>
 <wire x1="141.605" y1="158.75" x2="141.605" y2="166.37" width="0.1524" layer="91"/>
 <pinref part="J15" gate="G$1" pin="1"/>
-</segment>
-</net>
-<net name="SOM17" class="0">
-<segment>
-<wire x1="126.365" y1="158.75" x2="116.84" y2="158.75" width="0.1524" layer="91"/>
-<label x="116.84" y="158.75" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="J15" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$7" class="0">
