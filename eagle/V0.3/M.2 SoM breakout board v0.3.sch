@@ -13291,7 +13291,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="D11" library="particle SZ" deviceset="ESD" device="" value="0402ESDA-05N"/>
 <part name="D12" library="particle SZ" deviceset="ESD" device="" value="0402ESDA-05N"/>
 <part name="D13" library="particle SZ" deviceset="ESD" device="" value="0402ESDA-05N"/>
-<part name="J22" library="particle SZ" library_urn="urn:adsk.eagle:library:21650216" deviceset="SIP-2" device="" package3d_urn="urn:adsk.eagle:package:21650858/5"/>
 <part name="J21" library="particle SZ" library_urn="urn:adsk.eagle:library:21650216" deviceset="SIP-2" device="" package3d_urn="urn:adsk.eagle:package:21650858/5"/>
 <part name="R30" library="RedBear" deviceset="RES" device="R0603" value="100K"/>
 <part name="Q3" library="RedBear" deviceset="PMOS" device="" value="HSS2333"/>
@@ -13774,10 +13773,6 @@ and add reserved plug-in resistor vacancies.
 <instance part="D13" gate="G$1" x="15.875" y="57.785" smashed="yes">
 <attribute name="NAME" x="15.875" y="50.8" size="1.27" layer="95"/>
 <attribute name="VALUE" x="6.985" y="44.45" size="1.27" layer="96"/>
-</instance>
-<instance part="J22" gate="G$1" x="162.56" y="145.415" smashed="yes" rot="R90">
-<attribute name="NAME" x="158.115" y="147.955" size="1.27" layer="95"/>
-<attribute name="VALUE" x="161.29" y="147.955" size="1.27" layer="96"/>
 </instance>
 <instance part="J18" gate="G$1" x="118.745" y="106.68" smashed="yes">
 <attribute name="NAME" x="103.505" y="52.705" size="1.778" layer="95"/>
@@ -15103,23 +15098,7 @@ and add reserved plug-in resistor vacancies.
 <wire x1="24.003" y1="162.56" x2="26.67" y2="162.56" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="VUSB-MCU" class="0">
-<segment>
-<wire x1="163.83" y1="139.7" x2="169.545" y2="139.7" width="0.1524" layer="91"/>
-<pinref part="J22" gate="G$1" pin="2"/>
-<wire x1="163.83" y1="140.335" x2="163.83" y2="139.7" width="0.1524" layer="91"/>
-<label x="169.545" y="139.7" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="VUSBMCU" class="0">
-<segment>
-<wire x1="144.145" y1="139.7" x2="161.29" y2="139.7" width="0.1524" layer="91"/>
-<pinref part="J22" gate="G$1" pin="1"/>
-<wire x1="161.29" y1="140.335" x2="161.29" y2="139.7" width="0.1524" layer="91"/>
-<pinref part="J18" gate="G$1" pin="NC@20"/>
-</segment>
-</net>
-<net name="N$10" class="0">
+<net name="VUSB_MCU" class="0">
 <segment>
 <wire x1="118.11" y1="106.68" x2="118.745" y2="106.68" width="0.1524" layer="91"/>
 </segment>
@@ -15152,6 +15131,13 @@ and add reserved plug-in resistor vacancies.
 <label x="210.82" y="34.925" size="1.27" layer="95"/>
 <pinref part="J11" gate="G$1" pin="2"/>
 <wire x1="219.075" y1="34.925" x2="220.345" y2="34.925" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="VUSB-MCU" class="0">
+<segment>
+<wire x1="144.145" y1="139.7" x2="169.545" y2="139.7" width="0.1524" layer="91"/>
+<pinref part="J18" gate="G$1" pin="NC@20"/>
+<label x="169.545" y="139.7" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
@@ -16059,11 +16045,6 @@ the power module EN_AUX which
 </net>
 <net name="GPIO1" class="0">
 <segment>
-<wire x1="227.33" y1="135.89" x2="239.395" y2="135.89" width="0.1524" layer="91"/>
-<label x="239.395" y="135.89" size="1.27" layer="95" xref="yes"/>
-<pinref part="JP25" gate="G$1" pin="2"/>
-</segment>
-<segment>
 <wire x1="181.61" y1="52.705" x2="192.405" y2="52.705" width="0.1524" layer="91"/>
 <label x="184.785" y="52.705" size="1.778" layer="95"/>
 <pinref part="J6" gate="G$1" pin="REGN@7"/>
@@ -16618,6 +16599,13 @@ the power module EN_AUX which
 <segment>
 <pinref part="MS1" gate="G$1" pin="MD"/>
 <wire x1="163.83" y1="161.29" x2="153.67" y2="161.29" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="CTS" class="0">
+<segment>
+<wire x1="227.33" y1="135.89" x2="239.395" y2="135.89" width="0.1524" layer="91"/>
+<label x="239.395" y="135.89" size="1.27" layer="95" xref="yes"/>
+<pinref part="JP25" gate="G$1" pin="2"/>
 </segment>
 </net>
 </nets>

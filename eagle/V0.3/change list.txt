@@ -31,3 +31,6 @@ change  for test:
 1.Removed the TP test pad bottom
 2.Add  GND polygon for lay2
 3.Add tracker code
+4.remove J22
+5.modify featherwing the D3/CTS instead GPIO1
+6.add RGB silkscreen
