@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="10" unitdist="mil" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
+<grid distance="10" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="VCC" color="16" fill="1" visible="yes" active="yes"/>
@@ -4219,7 +4219,7 @@ MAX</text>
 <text x="125.25" y="68.548" size="1.27" layer="21" font="vector" ratio="15" rot="R90" align="center-right">MISO</text>
 <text x="130.33" y="68.548" size="1.27" layer="21" font="vector" ratio="15" rot="R90" align="center-right">TX</text>
 <text x="127.79" y="68.548" size="1.27" layer="21" font="vector" ratio="15" rot="R90" align="center-right">RX</text>
-<text x="56.924" y="73.12" size="1.27" layer="21" ratio="15" rot="R270" align="center-left">EN AUX</text>
+<text x="56.924" y="73.12" size="0.8128" layer="21" ratio="15" rot="R270" align="center-left">EN AUX</text>
 <text x="97.31" y="70.834" size="1.27" layer="21" font="vector" ratio="15" rot="R90" align="center-right">3V3 AUX</text>
 <text x="102.39" y="68.548" size="1.27" layer="21" font="vector" ratio="15" rot="R90" align="center-right">GND</text>
 <text x="132.87" y="68.548" size="1.27" layer="21" font="vector" ratio="15" rot="R90" align="center-right">NC</text>
