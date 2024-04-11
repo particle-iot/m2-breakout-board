@@ -26,3 +26,8 @@ change  for test:
 7. Align RGB LED and buttons
 8. Align the mounting holes to the corners of the PCB
 9. Updated silkscreen and pinout labels on top and bottom
+
+4/11
+1.Removed the TP test pad bottom
+2.Add  GND polygon for lay2
+3.Add tracker code
