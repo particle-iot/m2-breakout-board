@@ -13,3 +13,16 @@ change  for test:
 6.J10 exchanges the positions of PWM1 and PWM2 and aligns with pinmap
 7. modify the layout
 8.change the reset PIN of featherWing
+
+
+4/10/2014 (Mohit)
+
+1. Change feather jumpers to smd scratch pads
+2. Align proto area with m.2
+3. Add 3.3V and GND rail along the proto area
+4. LiPo battery pinout change - when we changed from vertical to horizontal, the pinout was flipped. so this is now fixed.
+5. Flipped the TX/RX to match the feather pin out
+6. Removed EN pin connection to feather
+7. Align RGB LED and buttons
+8. Align the mounting holes to the corners of the PCB
+9. Updated silkscreen and pinout labels on top and bottom
