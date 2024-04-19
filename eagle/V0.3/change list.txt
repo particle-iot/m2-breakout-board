@@ -34,3 +34,8 @@ change  for test:
 4.remove J22
 5.modify featherwing the D3/CTS instead GPIO1
 6.add RGB silkscreen
+
+4/19
+1.Repair the silk screen to the jumper,change the size of the circle at the position of the small rubber pad
+2.Remove the jumper from LED1 to 3V3,R16/NC,R17/NC.R11/NC, R22 as 0R ,make the circuit simple that used DC power supply directly  control, change the  Q1  as nmos and NC reserved
+3.Optimize SPI traces to make them equal in length
