@@ -3,10 +3,10 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.025" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -418,6 +418,11 @@ DIN A4, landscape with location and doc. field</description>
 <text x="-1.016" y="1.016" size="0.8128" layer="25" ratio="15">&gt;NAME</text>
 <text x="-1.016" y="-1.778" size="0.8128" layer="27" ratio="15">&gt;VALUE</text>
 </package>
+<package name="S8111-46R" library_version="49" library_locally_modified="yes">
+<smd name="C" x="0" y="0" dx="5.4" dy="5.4" layer="1"/>
+<text x="-2.54" y="5.08" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.54" y="3.81" size="1.27" layer="27">&gt;VALUE</text>
+</package>
 </packages>
 <packages3d>
 <package3d name="CONN5X2_1.27" urn="urn:adsk.eagle:package:10568497/4" type="model" library_version="36" library_locally_modified="yes">
@@ -581,6 +586,15 @@ DIN A4, landscape with location and doc. field</description>
 <text x="-3.175" y="7.62" size="1.778" layer="95">&gt;NAME</text>
 <text x="-3.175" y="5.715" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
+<symbol name="CABLE-CLIP" library_version="49" library_locally_modified="yes">
+<pin name="C" x="0" y="-5.08" visible="pad" length="short" direction="pwr" rot="R90"/>
+<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
+<text x="-2.54" y="6.35" size="1.778" layer="95">&gt;NAME</text>
+<text x="-2.54" y="3.81" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="CONN5X2" urn="urn:adsk.eagle:component:23928563/2" prefix="CONN" library_version="36" library_locally_modified="yes">
@@ -713,6 +727,22 @@ DIN A4, landscape with location and doc. field</description>
 <device name="-S2761-46R" package="S2761-46R">
 <connects>
 <connect gate="TP1" pin="TP" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="S8111-46R" prefix="X1" library_version="49" library_locally_modified="yes">
+<description>CBL CLIP C-TYPE SILVER SOLDER</description>
+<gates>
+<gate name="X1" symbol="CABLE-CLIP" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="S8111-46R">
+<connects>
+<connect gate="X1" pin="C" pad="C"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -13139,6 +13169,14 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="R16" library="Particle" deviceset="R-US_" device="" value="1K/NC"/>
 <part name="+3V2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="J6" library="M.2 SoM breakout board v0.3" deviceset="M.2-SOM-BREAKOUT-BOARD-V0.2-0228_PARTICLE-SZ_PARTICLE-POWER-MODULE" device=""/>
+<part name="X4" library="particle-studios" library_urn="urn:adsk.eagle:library:10700396" deviceset="S8111-46R" device=""/>
+<part name="X5" library="particle-studios" library_urn="urn:adsk.eagle:library:10700396" deviceset="S8111-46R" device=""/>
+<part name="X6" library="particle-studios" library_urn="urn:adsk.eagle:library:10700396" deviceset="S8111-46R" device=""/>
+<part name="U$2" library="microbuilder" deviceset="GND" device=""/>
+<part name="U$3" library="microbuilder" deviceset="GND" device=""/>
+<part name="U$4" library="microbuilder" deviceset="GND" device=""/>
+<part name="GND18" library="particle-studios" library_urn="urn:adsk.eagle:library:10700396" deviceset="TP" device="-S2751-46R" value=""/>
+<part name="GND21" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -13514,7 +13552,7 @@ and add reserved plug-in resistor vacancies.
 <attribute name="NAME" x="106.68" y="37.0586" size="1.27" layer="95"/>
 <attribute name="VALUE" x="113.03" y="37.338" size="1.27" layer="96"/>
 </instance>
-<instance part="U$6" gate="G$1" x="15.24" y="13.97" smashed="yes"/>
+<instance part="U$6" gate="G$1" x="10.16" y="13.97" smashed="yes"/>
 <instance part="NFC" gate="G$1" x="72.39" y="40.005" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="69.215" y="38.735" size="1.27" layer="96" rot="MR0"/>
 <attribute name="NAME" x="76.2" y="40.513" size="1.27" layer="95" rot="MR180"/>
@@ -13564,6 +13602,27 @@ and add reserved plug-in resistor vacancies.
 <instance part="D16" gate="G$1" x="191.135" y="162.56" smashed="yes" rot="R90">
 <attribute name="NAME" x="188.595" y="165.735" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="188.595" y="151.13" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="X4" gate="X1" x="24.13" y="16.51" smashed="yes">
+<attribute name="NAME" x="21.59" y="22.86" size="1.778" layer="95"/>
+<attribute name="VALUE" x="21.59" y="20.32" size="1.778" layer="96"/>
+</instance>
+<instance part="X5" gate="X1" x="41.91" y="16.51" smashed="yes">
+<attribute name="NAME" x="39.37" y="22.86" size="1.778" layer="95"/>
+<attribute name="VALUE" x="39.37" y="20.32" size="1.778" layer="96"/>
+</instance>
+<instance part="X6" gate="X1" x="59.69" y="16.51" smashed="yes">
+<attribute name="NAME" x="57.15" y="22.86" size="1.778" layer="95"/>
+<attribute name="VALUE" x="57.15" y="20.32" size="1.778" layer="96"/>
+</instance>
+<instance part="U$2" gate="G$1" x="24.13" y="7.62" smashed="yes">
+<attribute name="VALUE" x="22.606" y="5.08" size="1.27" layer="96"/>
+</instance>
+<instance part="U$3" gate="G$1" x="41.91" y="7.62" smashed="yes">
+<attribute name="VALUE" x="40.386" y="5.08" size="1.27" layer="96"/>
+</instance>
+<instance part="U$4" gate="G$1" x="59.69" y="7.62" smashed="yes">
+<attribute name="VALUE" x="58.166" y="5.08" size="1.27" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -13872,6 +13931,21 @@ and add reserved plug-in resistor vacancies.
 <pinref part="R38" gate="G$1" pin="1"/>
 <pinref part="GND62" gate="1" pin="GND"/>
 <wire x1="79.375" y1="45.72" x2="81.28" y2="45.72" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="X4" gate="X1" pin="C"/>
+<pinref part="U$2" gate="G$1" pin="GND"/>
+<wire x1="24.13" y1="11.43" x2="24.13" y2="10.16" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="X5" gate="X1" pin="C"/>
+<pinref part="U$3" gate="G$1" pin="GND"/>
+<wire x1="41.91" y1="10.16" x2="41.91" y2="11.43" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="X6" gate="X1" pin="C"/>
+<pinref part="U$4" gate="G$1" pin="GND"/>
+<wire x1="59.69" y1="10.16" x2="59.69" y2="11.43" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
@@ -15184,12 +15258,12 @@ the power module EN_AUX which
 <instance part="GND14" gate="1" x="146.05" y="76.835" smashed="yes">
 <attribute name="VALUE" x="143.51" y="74.295" size="1.27" layer="96"/>
 </instance>
-<instance part="GND15" gate="TP1" x="141.605" y="86.995" smashed="yes">
-<attribute name="NAME" x="142.24" y="91.44" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="140.97" y="91.44" size="1.778" layer="96"/>
+<instance part="GND15" gate="TP1" x="135.255" y="86.995" smashed="yes">
+<attribute name="NAME" x="135.89" y="91.44" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="134.62" y="91.44" size="1.778" layer="96"/>
 </instance>
-<instance part="GND17" gate="1" x="141.605" y="76.835" smashed="yes">
-<attribute name="VALUE" x="139.065" y="74.295" size="1.27" layer="96"/>
+<instance part="GND17" gate="1" x="135.255" y="76.835" smashed="yes">
+<attribute name="VALUE" x="132.715" y="74.295" size="1.27" layer="96"/>
 </instance>
 <instance part="R33" gate="G$1" x="53.975" y="77.47" smashed="yes">
 <attribute name="NAME" x="48.895" y="73.66" size="1.778" layer="95"/>
@@ -15319,6 +15393,13 @@ the power module EN_AUX which
 </instance>
 <instance part="J6" gate="G$1" x="173.99" y="53.975" smashed="yes">
 <attribute name="NAME" x="172.72" y="71.755" size="1.778" layer="95"/>
+</instance>
+<instance part="GND18" gate="TP1" x="140.97" y="86.995" smashed="yes">
+<attribute name="NAME" x="141.605" y="91.44" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="140.335" y="91.44" size="1.778" layer="96"/>
+</instance>
+<instance part="GND21" gate="1" x="140.97" y="76.835" smashed="yes">
+<attribute name="VALUE" x="138.43" y="74.295" size="1.27" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -15457,7 +15538,7 @@ the power module EN_AUX which
 </segment>
 <segment>
 <pinref part="GND15" gate="TP1" pin="TP"/>
-<wire x1="141.605" y1="86.995" x2="141.605" y2="79.375" width="0.1524" layer="91"/>
+<wire x1="135.255" y1="86.995" x2="135.255" y2="79.375" width="0.1524" layer="91"/>
 <pinref part="GND17" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -15489,6 +15570,11 @@ the power module EN_AUX which
 <pinref part="GND9" gate="1" pin="GND"/>
 <pinref part="J1" gate="J$1" pin="2"/>
 <wire x1="32.385" y1="88.9" x2="26.67" y2="88.9" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="140.97" y1="86.995" x2="140.97" y2="79.375" width="0.1524" layer="91"/>
+<pinref part="GND18" gate="TP1" pin="TP"/>
+<pinref part="GND21" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
