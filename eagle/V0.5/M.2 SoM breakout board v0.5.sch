@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -10850,7 +10850,7 @@ Mounting hole = 3.65mm&lt;br&gt;</description>
 <wire x1="0" y1="-6" x2="1" y2="-7" width="0.127" layer="51"/>
 <wire x1="-15" y1="-42" x2="-4" y2="-42" width="0.508" layer="21"/>
 <wire x1="15" y1="-42" x2="4" y2="-42" width="0.508" layer="21"/>
-<smd name="!RESET" x="10" y="-7.5" dx="2" dy="2" layer="1" roundness="100"/>
+<smd name="!RESET" x="9.63" y="-7.5" dx="2" dy="2" layer="1" roundness="100"/>
 <smd name="1" x="-9.62" y="3.735" dx="1.55" dy="0.3" layer="1" rot="R90"/>
 <smd name="2" x="-9.37" y="-3.815" dx="1.55" dy="0.3" layer="1" rot="R90"/>
 <smd name="3" x="-9.12" y="3.735" dx="1.55" dy="0.3" layer="1" rot="R90"/>
@@ -10920,10 +10920,10 @@ Mounting hole = 3.65mm&lt;br&gt;</description>
 <smd name="75" x="8.88" y="3.735" dx="1.55" dy="0.3" layer="1" rot="R90"/>
 <smd name="76" x="9.98" y="2.96" dx="2.75" dy="1.2" layer="1" rot="R90"/>
 <smd name="77" x="-10.72" y="2.96" dx="2.75" dy="1.2" layer="1" rot="R90"/>
-<pad name="78" x="-0.351" y="-42" drill="3.65" diameter="7"/>
-<smd name="SWCLK" x="10" y="-15" dx="2" dy="2" layer="1" roundness="100"/>
-<smd name="SWDIO" x="10" y="-12.5" dx="2" dy="2" layer="1" roundness="100"/>
-<smd name="SWO" x="10" y="-10" dx="2" dy="2" layer="1" roundness="100"/>
+<pad name="78" x="-0.351" y="-42" drill="3.65" diameter="6.2"/>
+<smd name="SWCLK" x="9.63" y="-15" dx="2" dy="2" layer="1" roundness="100"/>
+<smd name="SWDIO" x="9.63" y="-12.5" dx="2" dy="2" layer="1" roundness="100"/>
+<smd name="SWO" x="9.63" y="-10" dx="2" dy="2" layer="1" roundness="100"/>
 <text x="-11.43" y="8.89" size="1.27" layer="25">&gt;NAME</text>
 <text x="-11.43" y="6.35" size="1.27" layer="27">&gt;VALUE</text>
 <hole x="-10.37" y="-1.54" drill="1.1"/>
@@ -14949,11 +14949,6 @@ and add reserved plug-in resistor vacancies.
 <pinref part="USB2" gate="J1" pin="CC1"/>
 <pinref part="R1" gate="R1" pin="1"/>
 <wire x1="24.003" y1="162.56" x2="26.67" y2="162.56" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="VUSB_MCU" class="0">
-<segment>
-<wire x1="118.11" y1="106.68" x2="118.745" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$15" class="0">

@@ -47,3 +47,7 @@ change  for test:
 4/29
 update based on feedback
 https://docs.google.com/spreadsheets/d/1uBIp3QQ9_3l1jX0imAp4cWjTrk49XV2TEJlBkVL_Cq4/edit#gid=567895109
+
+5/07
+1.Check the DRC again and remove the GND via short circuit bug
+2.Modify the package and test point offset issue
