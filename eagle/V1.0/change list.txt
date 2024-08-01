@@ -1,0 +1,74 @@
+1.Remove 3.3v power LED  cutable trace
+2.repair CS PIN  misstake PIN because of featherwing error silkcreen 
+3.Reserve 2 pinholes for jumpers ，GPIO0  is used for IRQ ADC7   is used for RESET 
+4.Remove power module EN, PG connections to MSOM and  featherwing
+change  for test:
+ Delete 3.Reserve 2 pinholes for jumpers ，GPIO0  is used for IRQ ADC7   is used for RESET 
+20240404
+1.3V3 is divided into one channel as the load conversion switch 3V3_AUX, and GPIO1 is added to control EN_AUX
+2. Change the peripheral power supply to load 3V3_AUX
+3. Remove LED2 (required by nick)
+4.LED1 only lights up when DC_JACK, add NMOS control
+5. Modify the TS pin configuration and add reserved plug-in resistor vacancies.
+6.J10 exchanges the positions of PWM1 and PWM2 and aligns with pinmap
+7. modify the layout
+8.change the reset PIN of featherWing
+
+
+4/10/2014 (Mohit)
+
+1. Change feather jumpers to smd scratch pads
+2. Align proto area with m.2
+3. Add 3.3V and GND rail along the proto area
+4. LiPo battery pinout change - when we changed from vertical to horizontal, the pinout was flipped. so this is now fixed.
+5. Flipped the TX/RX to match the feather pin out
+6. Removed EN pin connection to feather
+7. Align RGB LED and buttons
+8. Align the mounting holes to the corners of the PCB
+9. Updated silkscreen and pinout labels on top and bottom
+
+4/11
+1.Removed the TP test pad bottom
+2.Add  GND polygon for lay2
+3.Add tracker code
+4.remove J22
+5.modify featherwing the D3/CTS instead GPIO1
+6.add RGB silkscreen
+
+4/19
+1.Repair the silk screen to the jumper,change the size of the circle at the position of the small rubber pad
+2.Remove the jumper from LED1 to 3V3,R16/NC,R17/NC.R11/NC, R22 as 0R ,make the circuit simple that used DC power supply directly  control, change the  Q1  as nmos and NC reserved
+3.Optimize SPI traces to make them equal in length
+
+4/24
+1.change V0.3 as v0.4
+2.change the power module footprint  so that the bottom can be soldered with connector, and the top layer can be directly SMT on the breakout board 
+
+4/29
+update based on feedback
+https://docs.google.com/spreadsheets/d/1uBIp3QQ9_3l1jX0imAp4cWjTrk49XV2TEJlBkVL_Cq4/edit#gid=567895109
+
+5/07
+1.Check the DRC again and remove the GND via short circuit bug
+2.Modify the package and test point offset issue
+
+7/30 Modify by Frank Yang
+Schematic
+1.change D4 fron TVS to ESD,but DNP.
+2.Modify DC power switch circuit, add Q2,add R32 1K 0402,change R15 from 1K to 36K,change R14 from 100K to 62K.
+3.Remove MFF2 eSIM circuit.
+4.Remove the EEPROM circuit.
+5.Add new package tactile switch S2,S3.
+6.Remove SIM card circuit.
+
+PCB
+1.change R30 PCB package.
+2.Remove data silkscreen.
+3.The bottom side of the board below the power module add silkscreen:"Power Module - Insert on Top Side".
+4.The top side of the power module add silkscreen:“Power Module - Insert This Side”.
+5.The top side of the power module, add thermal PAD. 
+6.The pin 1 of the power module add silkscreen:1
+7.The SMA ports add silkscreen SMA1 to SMA3.
+8.Change PCB version to V1.0.
+
+
