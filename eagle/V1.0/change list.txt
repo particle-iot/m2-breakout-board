@@ -64,7 +64,7 @@ Schematic
 PCB
 1.change R30 PCB package.
 2.Remove data silkscreen.
-3.The bottom side of the board below the power module add silkscreen:"Power Module - Insert on Top Side".
+3.The bottom side of the board below the power module add silkscreen:"Insert on Top Side".
 4.The top side of the power module add silkscreen:“Power Module - Insert This Side”.
 5.The top side of the power module, add thermal PAD. 
 6.The pin 1 of the power module add silkscreen:1
