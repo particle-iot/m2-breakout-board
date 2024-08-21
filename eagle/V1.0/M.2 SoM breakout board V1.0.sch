@@ -12064,7 +12064,7 @@ by exp-lbrs.ulp</description>
 <part name="S2" library="Particle" deviceset="TAC_SWITCH" device=""/>
 <part name="S3" library="Particle" deviceset="TAC_SWITCH" device=""/>
 <part name="LED2" library="particle SZ" deviceset="LED" device="" value="RED"/>
-<part name="R24" library="Particle" deviceset="R-US_" device="" value="0R"/>
+<part name="R24" library="Particle" deviceset="R-US_" device="" value="1K"/>
 <part name="JP1" library="SparkFun-Jumpers" library_urn="urn:adsk.eagle:library:528" deviceset="JUMPER-SMT_2_NC_TRACE" device="_NO-SILK" package3d_urn="urn:adsk.eagle:package:39286/2"/>
 <part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R14" library="Particle" deviceset="R-US_" device="" value="62K"/>
