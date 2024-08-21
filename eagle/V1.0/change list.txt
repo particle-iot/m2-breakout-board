@@ -52,9 +52,9 @@ https://docs.google.com/spreadsheets/d/1uBIp3QQ9_3l1jX0imAp4cWjTrk49XV2TEJlBkVL_
 1.Check the DRC again and remove the GND via short circuit bug
 2.Modify the package and test point offset issue
 
-7/30 Modify by Frank Yang
+2024/8/21 Modify by Frank Yang
 Schematic
-1.change D4 fron TVS to ESD,but DNP.
+1.change D4 from TVS to ESD,but DNP.
 2.Modify DC power switch circuit, add Q2,add R32 1K 0402,change R15 from 1K to 36K,change R14 from 100K to 62K.
 3.Remove MFF2 eSIM circuit.
 4.Remove the EEPROM circuit.
@@ -69,6 +69,7 @@ PCB
 5.The top side of the power module, add thermal PAD. 
 6.The pin 1 of the power module add silkscreen:1
 7.The SMA ports add silkscreen SMA1 to SMA3.
-8.Change PCB version to V1.0.
-
-
+8.Change J6 PCB package,change drill from 1.016mm to 1.3mm. Smaller pad 0.5mm.
+9.Add silkscreen label on the PCB to note that USB is only for comms and not power--"DATA ONLY"
+10.Add 3V3_AUX LED.
+11.Change PCB version to V1.0.
