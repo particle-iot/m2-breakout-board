@@ -11937,7 +11937,7 @@ by exp-lbrs.ulp</description>
 <part name="J2" library="con-jack" library_urn="urn:adsk.eagle:library:154" deviceset="DCJ0202" device="" package3d_urn="urn:adsk.eagle:package:7491/1"/>
 <part name="GND35" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="S1" library="SparkFun-Retired" deviceset="SWITCH-DPDT" device=""/>
-<part name="Q4" library="RedBear" deviceset="PMOS" device="" value="SI2333DS"/>
+<part name="Q4" library="RedBear" deviceset="PMOS" device="" value="SI2333DDS"/>
 <part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R15" library="Particle" deviceset="R-US_" device="" value="36K"/>
 <part name="RGB" library="Particle" deviceset="RGB-LED-CLMVB-FKA" device="RGB"/>
@@ -11982,8 +11982,8 @@ by exp-lbrs.ulp</description>
 <part name="GND12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="J21" library="particle SZ" library_urn="urn:adsk.eagle:library:21650216" deviceset="SIP-2" device="" package3d_urn="urn:adsk.eagle:package:21650858/5"/>
 <part name="R30" library="particle-studios" library_urn="urn:adsk.eagle:library:10700396" deviceset="RES_" device="0603" package3d_urn="urn:adsk.eagle:package:10700443/4" technology="100K_" value="100K"/>
-<part name="Q3" library="RedBear" deviceset="PMOS" device="" value="SI2333DS"/>
-<part name="Q5" library="RedBear" deviceset="PMOS" device="" value="SI2333DS"/>
+<part name="Q3" library="RedBear" deviceset="PMOS" device="" value="SI2333DDS"/>
+<part name="Q5" library="RedBear" deviceset="PMOS" device="" value="SI2333DDS"/>
 <part name="R31" library="RedBear" deviceset="RES" device="0402S" value="1K"/>
 <part name="LED3" library="particle SZ" deviceset="LED" device="" value="yellow"/>
 <part name="R13" library="particle SZ" deviceset="RES" device="0402S" value="1K"/>
@@ -12058,7 +12058,7 @@ by exp-lbrs.ulp</description>
 <part name="GND18" library="particle-studios" library_urn="urn:adsk.eagle:library:10700396" deviceset="TP" device="-S2751-46R" value=""/>
 <part name="GND21" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="D4" library="particle SZ" deviceset="ESD" device="" value="DNP"/>
-<part name="Q2" library="RedBear" deviceset="PMOS" device="" value="SI2333DS"/>
+<part name="Q2" library="RedBear" deviceset="PMOS" device="" value="SI2333DDS"/>
 <part name="R32" library="Particle" deviceset="R-US_" device="" value="1K"/>
 <part name="+3V3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device="" value="VIN"/>
 <part name="S2" library="Particle" deviceset="TAC_SWITCH" device=""/>
