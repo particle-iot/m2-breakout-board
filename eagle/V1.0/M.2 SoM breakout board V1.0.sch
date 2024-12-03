@@ -3,10 +3,10 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.025" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -13303,9 +13303,9 @@ PIN3 LI+</text>
 <text x="238.76" y="69.85" size="1.27" layer="97">25 Power enable pin</text>
 <text x="238.76" y="63.5" size="1.27" layer="97">23 Reserve for reset 
 power module</text>
-<text x="143.51" y="48.895" size="1.27" layer="97">GPIO1 is used for ctroling 
+<text x="143.51" y="48.895" size="1.27" layer="97">GPIO1 is used for controlling 
 the power module EN_AUX which
- make load switch work </text>
+makes load switch work </text>
 </plain>
 <instances>
 <instance part="FRAME2" gate="G$1" x="0" y="0" smashed="yes">
