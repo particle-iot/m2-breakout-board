@@ -13305,7 +13305,7 @@ PIN3 LI+</text>
 power module</text>
 <text x="143.51" y="48.895" size="1.27" layer="97">GPIO1 is used for controlling 
 the power module EN_AUX which
- make load switch work </text>
+makes load switch work </text>
 </plain>
 <instances>
 <instance part="FRAME2" gate="G$1" x="0" y="0" smashed="yes">
